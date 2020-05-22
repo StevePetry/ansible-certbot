@@ -1,0 +1,5 @@
+- name: service apache2 stop, if started
+  service:
+    name: apache2
+    state: stopped
+    
