@@ -1,7 +1,9 @@
-- hosts: localhost
-  connection: local
-  gather_facts: false
-
+---
+- hosts: sjpansn1.test.rit.edu
+  become: true
+  
+  tasks:
+  
   handlers:
     - name: Reload Apache
       service:
