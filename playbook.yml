@@ -1,5 +1,5 @@
 ---
-- hosts: sjpansn1.test.rit.edu
+- hosts: localhost
   become: true
   
   tasks:
