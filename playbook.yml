@@ -2,9 +2,13 @@
   connection: local
   gather_facts: false
 
-  tasks:
-- name: Stop service apache2, if running
-  service:
-    name: apache2
-    state: stopped
-    
+  handlers:
+    - name: Reload Apache
+      service:
+        name: apache2
+        state: reloaded
+
+    - name: Restart Apache
+      service:
+        name: apache2
+        state: restarted
