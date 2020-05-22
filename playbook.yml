@@ -3,7 +3,7 @@
   gather_facts: false
 
   tasks:
-- name: service apache2 stop, if started
+- name: Stop service apache2, if running
   service:
     name: apache2
     state: stopped
